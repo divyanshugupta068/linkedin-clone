@@ -70,6 +70,7 @@ Frontend runs on: http://localhost:5173
 
 ### 👨‍💻 Author
 ```bash
-Shashank Kumar (LinkedIn-Lite)
+Divyanshu Gupta (LinkedIn-Lite)
 ```
+
 
