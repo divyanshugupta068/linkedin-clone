@@ -1,0 +1,73 @@
+/* frontend/src/index.css - append these rules */
+:root {
+  --accent: #0a66c2;
+  --muted: #666;
+  --card-bg: #fff;
+  --border: #e6e6e6;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  margin: 0;
+  background: #f5f7f9;
+  color: #111;
+}
+
+/* topbar */
+.topbar {
+  background: white;
+  border-bottom: 1px solid var(--border);
+  padding: 10px 0;
+}
+.topbar-inner {
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 12px;
+}
+.brand {
+  font-weight: 700;
+  color: var(--accent);
+  text-decoration: none;
+}
+.topnav {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.username { color: var(--muted); font-size: 14px; }
+.profile-link { color: var(--accent); text-decoration: none; font-size: 14px; }
+
+/* page container */
+.page { max-width: 900px; margin: 20px auto; padding: 0 12px; }
+
+/* cards */
+.card {
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 14px;
+  margin-bottom: 16px;
+}
+
+/* small buttons */
+.btn {
+  border: 1px solid var(--border);
+  background: white;
+  padding: 6px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.btn-primary {
+  background: var(--accent);
+  color: white;
+  border-color: var(--accent);
+}
+
+/* simple layout for post actions */
+.post-actions { display: flex; gap: 8px; margin-top: 10px; align-items: center; }
+.like-count { font-size: 13px; color: var(--muted); }
+.comment-list { margin-top: 10px; border-top: 1px dashed var(--border); padding-top: 8px; }
+.comment-item { font-size: 14px; padding: 6px 0; border-bottom: 1px solid rgba(0,0,0,0.02); }
